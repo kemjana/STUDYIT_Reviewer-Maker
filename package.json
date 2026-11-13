@@ -1,0 +1,36 @@
+{
+  "name": "studyit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StudyIt - turn a PDF module into a reviewer, flashcards, and quizzes with Gemini",
+  "scripts": {
+    "postinstall": "node scripts/copy-pdf-worker.mjs",
+    "predev": "node scripts/copy-pdf-worker.mjs",
+    "prebuild": "node scripts/copy-pdf-worker.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "tsx scripts/test-unit.ts",
+    "test:api": "node scripts/test-api.mjs",
+    "test": "npm run test:unit && npm run test:api"
+  },
+  "dependencies": {
+    "@google/genai": "^3.0.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "^16.4.5",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

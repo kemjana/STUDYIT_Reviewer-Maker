@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+
+# Next.js build output
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# SECRETS - never commit these
+.env
+.env.local
+.env.*.local
+
+# logs and OS files
+npm-debug.log*
+.DS_Store
+.vercel
+
+# generated copy of the PDF reader's worker (made by scripts/copy-pdf-worker.mjs)
+public/pdf.worker.min.mjs

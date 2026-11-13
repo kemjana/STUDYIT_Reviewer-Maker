@@ -1,0 +1,22 @@
+// The StudyIt logo: a page with a yellow highlighter stripe on a violet tile. The same drawing is in src/app/icon.svg (the browser tab icon).
+export function LogoMark({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+      <rect width="48" height="48" rx="13" fill="#6c4cf1" />
+      <path d="M15 9h12.5L35 16.5V37a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 13 37V11.5A2.5 2.5 0 0 1 15 9z" fill="#ffffff" />
+      <path d="M27.5 9v5a2.5 2.5 0 0 0 2.5 2.5h5z" fill="#cfc6ff" />
+      <rect x="16.5" y="22" width="15" height="5.5" rx="2.75" fill="#ffe14d" />
+      <rect x="17.5" y="23.4" width="13" height="2.6" rx="1.3" fill="#2a1f6b" />
+      <rect x="17.5" y="31.5" width="9" height="2.6" rx="1.3" fill="#9d90e6" />
+    </svg>
+  );
+}
+
+export function Logo({ size = 36, text = true }: { size?: number; text?: boolean }) {
+  return (
+    <span className="logo" aria-label="StudyIt">
+      <LogoMark size={size} />
+      {text && <span className="logo-text" style={{ fontSize: size * 0.62 }}>Study<b>It</b></span>}
+    </span>
+  );
+}
