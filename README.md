@@ -2,7 +2,7 @@
 
 **Got a huge PDF module? Just StudyIt.**
 
-🔗 **Live demo (hosted on Vercel):** https://study-it-alpha.vercel.app
+🔗 **Live demo (hosted on Vercel):** [https://study-it-alpha.vercel.app](https://studyit-reviewer-maker.vercel.app/login)
 <img width="1917" height="923" alt="image" src="https://github.com/user-attachments/assets/f34dfec2-5ebd-4ebc-808c-eddca98b9925" />
 <img width="1917" height="923" alt="image" src="https://github.com/user-attachments/assets/2dfd0625-20ac-49a3-8a6d-3a350f68c95b" />
 <img width="1917" height="923" alt="image" src="https://github.com/user-attachments/assets/fd1b5687-deed-4c8f-a6f7-8fc3eb813961" />
