@@ -77,21 +77,14 @@ Paid hosting and database plans, OCR support for scanned PDFs, background jobs f
    git clone [https://github.com/kemjana/studyit.git](https://github.com/kemjana/studyit.git)
    cd studyit
    npm install
-
-```
-
 3. Create the database tables: in Supabase, open SQL Editor, paste all of `schema.sql`, and press **Run**.
 4. Copy `.env.example` to `.env.local` and fill it in with no spaces and no quotes (never commit `.env.local`):
-```env
-GEMINI_API_KEY=your-gemini-key
-GEMINI_MODEL=gemini-3.7-flash
-SUPABASE_URL=[https://PROJECT-ID.supabase.co](https://PROJECT-ID.supabase.co)
-SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
-SUPABASE_SECRET_KEY=sb_secret_...
-
-```
-
-
+   ```env
+   GEMINI_API_KEY=your-gemini-key
+   GEMINI_MODEL=gemini-3.7-flash
+   SUPABASE_URL=[https://PROJECT-ID.supabase.co](https://PROJECT-ID.supabase.co)
+   SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+   SUPABASE_SECRET_KEY=sb_secret_...
 5. Turn on sign-in: in Supabase, enable **Email**. To use Google, enable **Google** and add its Client ID and secret. Under **Authentication > URL Configuration**, add `http://localhost:3000/**` to the Redirect URLs.
 6. Start the app: `npm run dev`
 7. Open `http://localhost:3000`, sign in, then open Setup check (`/check`) and press **Test Gemini now** to confirm your key and model work.
@@ -102,9 +95,5 @@ Restart `npm run dev` whenever you edit `.env.local`. For deployment on Vercel, 
 ## Stack
 
 Next.js (App Router), TypeScript, plain CSS, Google Gemini (`@google/genai`), `pdf.js`, Supabase (Auth and Postgres), Vercel.
-
-```
-
-```
 
 *Disclaimer: For educational and personal study purposes only. Do not upload confidential or sensitive documents. Built with Next.js, Supabase, and Google Gemini.*
